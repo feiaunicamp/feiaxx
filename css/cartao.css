@@ -11,6 +11,7 @@
     border: 1px solid #AAA;
     border-radius: 5px;
     transition: 0.3s;
+    color: #fff
 }
 
 .card-evento-formativo{
@@ -50,7 +51,6 @@
     border-radius: 5px;
     transition: 0.3s;
     background-color: rgb(38,68,96,0.9);
-    color: white;
 }
 
 .card-visuais{
