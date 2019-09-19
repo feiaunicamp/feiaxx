@@ -19,6 +19,20 @@
     margin: 15px 0px;
     border: 1px solid #AAA;
     border-radius: 5px;
+    transition: 0.5s;
+    text-align: left;
+}
+
+.cardnome:hover{
+    background-color: rgba(91,33,32,0.2);
+}
+
+.painel {
+  padding: 0 18px;
+  max-height: 0;
+  display: none;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
 }
 
 .card h5,h6{
@@ -100,7 +114,7 @@
 
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .cardimg {
@@ -122,4 +136,3 @@
     background-color: #a43b3a;
     color: #edd !important;
 }
-
