@@ -92,7 +92,7 @@
 
 })(jQuery);
 
-
+/* acorddion */
 
 var acc = document.getElementsByClassName("cardnome");
 var i;
@@ -101,7 +101,7 @@ for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     /* Toggle between adding and removing the "active" class,
     to highlight the button that controls the panel */
-    this.classList.toggle("active");
+    this.classList.toggle("botao");
 
     /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
@@ -115,7 +115,7 @@ for (i = 0; i < acc.length; i++) {
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    this.classList.toggle("botao");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
@@ -124,4 +124,42 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
+
+/* oficina horario */
+
+var obj = document.getElementsByClassName("oficina");
+var i;
+var data = new Date;
+var hora = data.getHours();
+var dia = data.getDate() ;
+var mes = data.getMonth();
+var ano = data.getFullYear();
+
+//window.alert(mes);
+
+if(ano>=2019){
+	if(mes==8){
+		if(dia==21 && hora>=12){
+			for(i=0;i<obj.length;i++){
+				obj[i].classList.toggle('oficinaAtv');
+			}
+		}
+		if(dia>21){
+			for(i=0;i<obj.length;i++){
+				obj[i].classList.toggle('oficinaAtv');
+			}
+		}
+	}
+	if(mes>8){
+		for(i=0;i<obj.length;i++){
+			obj[i].classList.toggle('oficinaDesativa');
+		}
+	}
+}
+
+
+
+
 
