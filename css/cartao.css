@@ -15,16 +15,31 @@
 
 .cardnome{
     position: relative;
-    padding: 40px 20px 20px 20px;
+    padding: 30px 30px 30px 30px;
     margin: 15px 0px;
     border: 1px solid #AAA;
     border-radius: 5px;
     transition: 0.5s;
     text-align: left;
+    font-family: Haptik, sans-serif;
 }
 
 .cardnome:hover{
     background-color: rgba(91,33,32,0.2);
+}
+
+.cardnome:after {
+  content: '\002B clique para ler mais';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+
+
+.botao:after {
+  content: '\2212';
 }
 
 .painel {
@@ -135,4 +150,15 @@
 .btn-site {
     background-color: #a43b3a;
     color: #edd !important;
+}
+
+
+/*oficinas display*/
+
+.oficina{
+    display: none;
+}
+
+.oficinaAtv {
+  display: initial;
 }
