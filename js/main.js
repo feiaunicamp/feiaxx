@@ -154,7 +154,7 @@ if(ano>=2019){
 	}
 	if(mes>8){
 		for(i=0;i<obj.length;i++){
-			obj[i].classList.toggle('oficinaDesativa');
+			obj[i].classList.toggle('oficinaAtv');
 		}
 	}
 }
